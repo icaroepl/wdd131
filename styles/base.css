@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #30578a; /* forest green */
+    --accent1-color: #37393a; /* dark slate blue */
+    --accent2-color: #212325; /* dark slate blue */
+    --heading-font: "Share Tech", Arial, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+header{
+    align-items: center;
+    text-align: center;
+    background-color:  var(--accent1-color);
+    font-family: var(--heading-font);
+}
+
+#course-title {
+    display: flex;             /* Transforma o span em um container flex */
+    justify-content: center;   /* Centraliza na horizontal */
+    align-items: center;       /* Centraliza na vertical */
+    background-color:  var(--primary-color);
+    color: white;
+    height: 50px;
+    font-size: larger; 
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none; 
+    height: 40px;
+    margin: auto;
+    font-size: large;
+}
+
+header nav a {
+  /* remove as linhas*/
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li{
+    flex: 1 1 100%;
+}
+
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1600px;
+    height: 900px;
+    padding: 50px;
+}
+
+main h1{
+    grid-column: 1/ -1;
+    text-align: center;
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
+    padding: 10px;
+}
+
+.card:first-of-type {
+    border: 1px solid #424242;
+}
+
+.card h2 {
+    color: white;
+    text-align: center;
+    background: #30578a;
+    padding: 15px;
+    height: auto;
+    margin: 0;
+}
+
+.card:first-of-type h3 {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    margin: 100px;
+    font-size: x-large;
+    border-bottom-color: #37393a;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.card:first-of-type img{
+    float: right;         
+    width: 170px;         
+    height: auto;
+    padding: 30px;
+}
+
+.card:first-of-type p{                
+    height: auto;
+    padding: 30px;
+    font-family: var(--body-font);
+    font-size: large;
+}
+
+.card:first-of-type.flag-img{
+    float: left; 
+}
+
+.card:last-of-type {
+    border: 1px solid #424242;
+}
+
+.card nav{
+    height: auto;
+    display: flex;
+    height: auto;
+    padding: 20px;
+    margin-top: 50%;      
+}
+
+.card ul li{
+    padding: 5px;
+    font-size: x-large;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color:  var(--primary-color);
+    height: 70px;
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+.last-text{
+    color: white;  
+}
+
+#currentyear{
+    color: yellow;
+}
+
+#lastmodified{
+     color: yellow;
+}
+
+
