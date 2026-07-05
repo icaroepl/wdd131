@@ -109,10 +109,9 @@ main h1{
     border: 1px solid #424242;
 }
 
-.card nav{
+.card .resources-links{
     height: auto;
     display: flex;
-    height: auto;
     padding: 20px;
     margin-top: 50%;      
 }
@@ -143,5 +142,3 @@ footer{
 #lastmodified{
      color: yellow;
 }
-
-
