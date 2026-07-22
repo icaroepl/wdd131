@@ -6,6 +6,10 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+.weather::after {
+    content: " ☀️";
+}
+
 header{
     display: flex;
     justify-content: center;
