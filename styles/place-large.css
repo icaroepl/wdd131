@@ -4,7 +4,7 @@
     }
 
     .data h2{     
-        background-color:   #007914c4;
+        background-color:   var(--primary-color);
         padding: 20px;
         color: rgba(255, 255, 255, 0.8);
         text-align: left;
@@ -15,7 +15,7 @@
         bottom: 400px;
         left: 60px;
         right: 20px;
-        background-color: var(--primary-color);;
+        background-color: var(--primary-color);
         background-color: white;
         padding: 16px;
         width: 300px;
@@ -36,9 +36,9 @@
     }
     
     .weather h2{     
-        background-color:   #007914c4;
+        background-color:  var(--primary-color);
         padding: 20px;
-        color: rgba(255, 255, 255, 0.8);
+        color: white;
         text-align: left;
     }
 
