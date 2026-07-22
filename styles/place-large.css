@@ -41,6 +41,11 @@
         text-align: left;
     }
 
+    .weather img{
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
     main{
         position: relative;
     }
