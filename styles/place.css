@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #007914; /* forest green */
+    --accent1-color: #37393a; /* dark slate blue */
+    --accent2-color: #212325; /* dark slate blue */
+    --heading-font: "Share Tech", Arial, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color:  var(--primary-color);
+    font-family: var(--heading-font);
+    color: white;
+    width: 400px;
+    height: 100px;
+    align-items: center;
+    border-bottom: 20px solid #f7e81b
+}
+header span{
+    width: 200px;   
+    text-align: center;
+    padding: 2px;
+    font-size: xx-large;
+}
+
+body{
+    width: 400px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    text-align: center;
+    justify-content: center; 
+    margin: 0 auto;
+}
+
+.hero img{
+    max-width: 100%;
+    border-bottom: 10px solid var(--primary-color)
+}
+
+.weather img{
+    max-width: 100px;
+}
+
+footer{
+     background-color:  var(--primary-color);
+     width: 100%;
+     color: white;
+}

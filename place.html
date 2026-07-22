@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Icaro Emanuel Pereira Lima</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals Icaro Emanuel Pereira Lima">
+    <meta name="author" content="Icaro Lima">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span id="course-title">Brazil</span>
+    </header>
+    <main> 
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 200px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="brazilian toucan on a forest">
+            </picture>   
+        </div>
+        <section class="data">
+            <div>
+                <h2>Data</h2>  
+                <p><strong>Area:</strong> 8,515,767 sq km</p>
+                <p><strong>Population:</strong> 203,062,512</p>
+                <p><strong>Capital:</strong> Brasília</p>
+                <p><strong>Languages:</strong> Portuguese</p>
+                <p><strong>Currency:</strong> Brazilian Real (BRL)</p>
+                <p><strong>Time Zone:</strong> UTC-3</p>
+                <p><strong>Calling Code:</strong> +55</p>
+                <p><strong>Internet TLD:</strong> .br</p>
+            </div>  
+        </section>
+        <section class="weather">
+            <div>
+                <h2>Weather</h2>  
+                <img src="images/weather.svg" alt="brazilian toucan on a forest">
+                <p><strong>Temperature:</strong> 10 °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> 5 km/h</p>
+                <p><strong>Wind Chill: </strong><span id="windchill"></span></p>
+            </div>  
+        </section>
+    </main>
+    <footer>
+        <p class="last-text">©<span id="currentyear"></span> 💻 Icaro Emanuel Pereira Lima Brazil 💻</p>
+        <p id="lastmodified"></p> 
+    </footer>
+</body>
+</html>
