@@ -1,0 +1,58 @@
+:root {
+	--back: rgb(14, 14, 14);
+  --back2: hsl(0, 0%, 24%);
+	--White: white;
+	--borderlight:rgba(0, 0, 0, 0.116);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back);
+    font-size: .85rem;
+}
+
+thead {
+    background-color: var(--back);  
+    color: var(--White);
+}
+
+th{
+    padding: 15px 15px;
+}
+
+thead tr:nth-child(2) th:nth-child(1){
+    background-color: var(--back);
+}
+
+thead tr:nth-child(2){
+    background-color: var(--back2);
+}
+
+tbody th td{
+    padding: 50px 50px;
+}
+
+td {
+	padding: 5px 15px;	
+}
+
+th, td{
+    border: 1px solid var(--borderlight);
+    text-align: center;
+}
+
+tbody tr:nth-child(2) {
+	background-color: var(--zebra);
+}
