@@ -10,8 +10,9 @@
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<!-- STYLE SHEETS -->
+<!-- STYLE SHEETS AND SCRIPTS -->
 <link href="styles/form.css" rel="stylesheet">
+<script src="scripts/form.js" defer></script>
      
 </head>
 <body>
@@ -27,14 +28,14 @@
             <label>Product Name
                 <select name="subject">
                     <option value="">Choose a product &#9662;</option>
-                <option value="software">Software Development</option>
-                <option value="creative">Creative Professional</option>
-                <option value="info">Information Technology</option>
-                <option value="data">Data Professional</option>
-                <option value="construction"> Construction</option>
-                <option value="manufacturing">Manufacturing</option>
-                <option value="business">Business Professional</option>
-                <option value="security">Cyber Security</option>    
+                    <option value="software" id="p-0"></option>
+                    <option value="creative" id="p-1"></option>
+                    <option value="info" id="p-2"></option>
+                    <option value="data" id="p-3"></option>
+                    <option value="construction" id="p-4"></option>
+                    <option value="manufacturing" id="p-5"></option>
+                    <option value="business" id="p-6"></option>
+                    <option value="security" id="p-7"></option>
                 </select>
                 <!-- caso nao selecione nada value fica null com please select  -->
             </label>
@@ -85,8 +86,8 @@
     
 <!-- FOOTER HERE -->   
     <footer>
-        &copy; 2024 &bull; Paul Cheney &bull; 123-555-6789
+        <p class="last-text">©<span id="currentyear"></span> 💻 Icaro Emanuel Pereira Lima Brazil 💻</p>
+        <p id="lastmodified"></p> 
     </footer>
-<script src="js/scripts.js"></script>
 </body>
 </html>
