@@ -1,19 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="description" content="Fill Me In">
-<meta name="author" content="John Doe">
-
-<title>HTML5 Start Site by Icaro Lima</title>>
-
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<!-- STYLE SHEETS AND SCRIPTS -->
-<link href="styles/form.css" rel="stylesheet">
-<script src="scripts/form.js" defer></script>
-     
+    <meta charset="utf-8">
+    <meta name="description" content="Share your experience and review our products. Submit your feedback quickly and help us deliver the best quality solutions for you.">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Start Site by Icaro Lima</title>>
+    <!-- STYLE SHEETS AND SCRIPTS -->
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>      
 </head>
 <body>
 <!-- HEADER HERE -->
@@ -24,18 +19,18 @@
     
 <!-- CONTENT HERE -->
 <main>
-    <form method="get" action ="thanks.html" class="wf1">
+    <form method="get" action="review.html" class="wf1">
             <label>Product Name
                 <select name="subject">
-                    <option value="">Choose a product &#9662;</option>
-                    <option value="software" id="p-0"></option>
-                    <option value="creative" id="p-1"></option>
-                    <option value="info" id="p-2"></option>
-                    <option value="data" id="p-3"></option>
-                    <option value="construction" id="p-4"></option>
-                    <option value="manufacturing" id="p-5"></option>
-                    <option value="business" id="p-6"></option>
-                    <option value="security" id="p-7"></option>
+                <option value="">Choose a product &#9662;</option>
+                <option value="software" id="p-0" label="Software Development"></option>
+                <option value="creative" id="p-1" label="Creative Professional"></option>
+                <option value="info" id="p-2" label="Information Technology"></option>
+                <option value="data" id="p-3" label="Data Professional"></option>
+                <option value="construction" id="p-4" label="Construction"></option>
+                <option value="manufacturing" id="p-5" label="Manufacturing"></option>
+                <option value="business" id="p-6" label="Business Professional"></option>
+                <option value="security" id="p-7" label="Cyber Security"></option>
                 </select>
                 <!-- caso nao selecione nada value fica null com please select  -->
             </label>
@@ -80,7 +75,7 @@
             <label>Written Review (Optional)<input type="review" name="review"></label>
 
             <label>Your Name (Optional)<input type="text" name="fname"></label>
-        <input type="submit" value ="Post Review">
+        <input type="submit" value="Post Review">
     </form>          
 </main>
     
