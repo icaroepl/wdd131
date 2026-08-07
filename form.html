@@ -5,7 +5,7 @@
     <meta name="description" content="Share your experience and review our products. Submit your feedback quickly and help us deliver the best quality solutions for you.">
     <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 Start Site by Icaro Lima</title>>
+    <title>HTML5 Start Site by Icaro Lima</title>
     <!-- STYLE SHEETS AND SCRIPTS -->
     <link href="styles/form.css" rel="stylesheet">
     <script src="scripts/form.js" defer></script>      
@@ -15,14 +15,12 @@
 	<header>
         <h1>PRODUCT REVIEW</h1>
     </header>
-    
-    
 <!-- CONTENT HERE -->
 <main>
     <form method="get" action="review.html" class="wf1">
             <label>Product Name
-                <select name="subject">
-                <option value="">Choose a product &#9662;</option>
+                <select name="subject" id="subject" required>
+                <option value="" disabled selected>Select a product &#9662;</option>
                 <option value="software" id="p-0" label="Software Development"></option>
                 <option value="creative" id="p-1" label="Creative Professional"></option>
                 <option value="info" id="p-2" label="Information Technology"></option>
@@ -39,27 +37,27 @@
             <div class="rating-group">
                 <div class="rating-item">
                     <label for="opcao1">☆</label>
-                    <input type="radio" id="opcao1" name="grupo_opcao" value="opcao1">   
+                    <input type="radio" id="opcao1" name="grupo_opcao" value="opcao1" required>   
                 </div>
             
                 <div class="rating-item">
                     <label for="opcao2">☆☆</label>
-                    <input type="radio" id="opcao2" name="grupo_opcao" value="opcao2">         
+                    <input type="radio" id="opcao2" name="grupo_opcao" value="opcao2" required>         
                 </div>
 
                 <div class="rating-item">
                     <label for="opcao3">☆☆☆</label>
-                    <input type="radio" id="opcao3" name="grupo_opcao" value="opcao3">             
+                    <input type="radio" id="opcao3" name="grupo_opcao" value="opcao3" required>             
                 </div>
 
                 <div class="rating-item">
                      <label for="opcao4">☆☆☆☆</label>
-                    <input type="radio" id="opcao4" name="grupo_opcao" value="opcao4">                
+                    <input type="radio" id="opcao4" name="grupo_opcao" value="opcao4" required>                
                 </div>
                 
                 <div class="rating-item">
                     <label for="opcao5">☆☆☆☆☆</label>
-                    <input type="radio" id="opcao5" name="grupo_opcao" value="opcao5">                
+                    <input type="radio" id="opcao5" name="grupo_opcao" value="opcao5" required>                
                 </div>
             </div>
             
@@ -67,12 +65,14 @@
             <label>Date of Installation<input type="date" name="completedDate"></label>
 
             <div>Wich features did you find useful in the product? (Check all that apply)</div>
-            <label><input type="checkbox" name="durability" value="yes">Durability</label>
-            <label><input type="checkbox" name="ease-of-use" value="yes">Ease of Use</label>
-            <label><input type="checkbox" name="performance" value="yes">Performance</label>       
-            <label><input type="checkbox" name="design" value="yes">Design</label>
-
-            <label>Written Review (Optional)<input type="review" name="review"></label>
+            <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+            <label><input type="checkbox" id="ease-of-use" name="ease-of-use" value="yes">Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>      
+            <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+            <label>
+                Written Review (Optional)
+               <textarea name="review"></textarea>
+            </label>
 
             <label>Your Name (Optional)<input type="text" name="fname"></label>
         <input type="submit" value="Post Review">

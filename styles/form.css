@@ -1,8 +1,5 @@
-:root {
-    --primary-color:  #366497; /* forest green */
-    --heading-font: "Share Tech", Arial, sans-serif;
-    --body-font: Roboto, Helvetica, sans-serif;
-}
+
+
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
@@ -49,7 +46,7 @@ header h2 {margin: 0; font-weight: normal;}
     font-size: .9rem;
 }
 
-.wf1 input[type="review"]
+.wf1 textarea
 {
     background-color: #eee;
     display:block;
@@ -130,4 +127,17 @@ footer {
     background-color: #ddd;
     padding: .5rem 2%;
     text-align: center;
+}
+
+/*----------- MEDIA QUERIES --------------*/
+@media (min-width: 600px) {
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .wf1 input[type="submit"] {
+    width: auto;
+    padding: 0.8rem 2rem;
+  }
 }
