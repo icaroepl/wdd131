@@ -14,9 +14,7 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-
 /*----------- HEADER --------------*/
-
 header {
     padding: 20px;
     background-color: #ddd;
@@ -131,10 +129,7 @@ footer {
 
 /*----------- MEDIA QUERIES --------------*/
 @media (min-width: 600px) {
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+  
 
   .wf1 input[type="submit"] {
     width: auto;

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isotronic games - Contact</title>
+    <meta name="description" content="Temple picture album learning activity example page.">
+    <meta name="author" content="Icaro Emanuel Pereira Lima">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/website.css">
+    <script src="scripts/website.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Isotronic Games</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Games</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>         
+        </nav>
+    </header>
+    <main>
+    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="wf1">
+        <!-- Sua Access Key do Web3Forms -->
+        <input type="hidden" name="access_key" value="51dfb9ad-8235-4cee-9b55-e7013f431b42">
+
+        <label for="fname">Your Name</label>
+        <input type="text" id="fname" name="name" required>
+        
+        <label for="femail">Your Email</label>    
+        <input type="email" id="femail" name="email" required>
+        
+        <label for="review">Message</label>
+        <textarea name="message" id="review" required></textarea>
+        
+        <input type="submit" value="Send Message">
+
+        <p class="email-alt">
+            Or send an email directly to: 
+            <a href="mailto:isotronicgames@gmail.com?subject=Contact%20About%20the%20Games" target="_blank">isotronicgames@gmail.com</a>
+        </p>
+    </form>
+    </main> 
+    <footer>
+        <p class="last-text">©<span id="currentyear"></span> 💻 Icaro Emanuel Pereira Lima Brazil 💻</p>
+        <p id="lastmodified"></p> 
+    </footer>
+</body>
+</html>

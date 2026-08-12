@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isotronic Games - Play Game</title>
+    <link rel="stylesheet" href="styles/website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech&display=swap" rel="stylesheet">
+    <script src="scripts/website.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Isotronic Games</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Games</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>        
+        </nav>
+    </header>
+
+    <main>
+        <section class="game-container">
+            <h2>Game Title Here</h2>
+            
+            <!-- Janela do Jogo WebGL -->
+            <div class="iframe-wrapper">
+                <iframe 
+                    src="games-files/meu-jogo/index.html" 
+                    title="WebGL Game"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p><strong>Controls:</strong> Use Arrow Keys or WASD to move. Spacebar to jump.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 💻 Icaro Emanuel Pereira Lima Brazil 💻</p>
+        <p id="lastmodified"></p> 
+    </footer>
+</body>
+</html>
